@@ -31,7 +31,13 @@ const quranWords = [
     { arabic: 'آيَة', english: 'Ayat (Verse)', tamil: 'வசனம்' },
     { arabic: 'سُورَة', english: 'Surah (Chapter)', tamil: 'அத்தியாயம்' }
 ];
-
+function showFallback(img){
+    img.style.display = "none";
+    const fallback = img.nextElementSibling;
+    if(fallback){
+        fallback.style.display = "flex";
+    }
+}
 document.addEventListener('DOMContentLoaded', () => {
 
     // ==========================
