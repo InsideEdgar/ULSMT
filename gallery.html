@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Uthuman Labbai Sahib Trust</title>
+    <meta name="description" content="View photos of our Masjid, events, and community gatherings.">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="bismillah-banner arabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-area">
+                <h1>Uthuman Labbai Sahib Trust</h1>
+            </a>
+            <div class="hamburger" id="hamburger">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="prayer-times.html">Prayer Times</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="administration.html">Administration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 class="section-title">Our Community in Pictures</h2>
+        <div class="ornamental-divider"></div>
+        
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="masjid">Masjid</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+            <button class="filter-btn" data-filter="community">Community</button>
+            <button class="filter-btn" data-filter="ramadan">Ramadan</button>
+        </div>
+
+        <!-- ✅ EMPTY GRID (JS WILL FILL) -->
+        <div class="gallery-grid" id="gallery-grid"></div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <div id="lightbox-image"></div>
+            <h3 id="lightbox-title">Title</h3>
+            <p id="lightbox-desc">Description</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prayer-times.html">Prayer Times</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="administration.html">Administration</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>📍 Uthuman Labbai Sahib Trust, City</li>
+                    <li>✉️ info@ulsmtmasjid.org</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>To serve the community with dedication, provide a welcoming environment for worship, and foster Islamic education and brotherhood.</p>
+            </div>
+        </div>
+        <div class="footer-quote arabic">
+            "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ"
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Uthuman Labbai Sahib Trust Jummuah Masjid. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
