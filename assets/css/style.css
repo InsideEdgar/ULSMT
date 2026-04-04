@@ -580,7 +580,7 @@ section {
     border-radius: 50%;
     background: linear-gradient(135deg, var(--deep-green), var(--mid-green));
     color: white;
-    display: flex;
+    display: none; /* 🔥 hide by default */
     justify-content: center;
     align-items: center;
     font-size: 2rem;
