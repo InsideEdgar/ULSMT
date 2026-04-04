@@ -563,6 +563,20 @@ section {
     margin-bottom: 10px;
 }
 
+.admin-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #ddd;
+}
+
+.admin-card {
+    text-align: center;
+    padding: 20px;
+}
+
 /* Lightbox */
 .lightbox {
     display: none;
