@@ -594,17 +594,6 @@ section {
     padding: 20px;
 }
 
-.admin-card.no-img::before {
-    content: '';
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--deep-green), var(--mid-green));
-    border: 3px solid var(--warm-gold);
-    display: block;
-    margin-bottom: 15px;
-}
-
 /* Lightbox */
 .lightbox {
     display: none;
