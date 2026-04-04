@@ -568,8 +568,10 @@ section {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
-    border: 3px solid #ddd;
+    margin-bottom: 15px;
+    border: 3px solid var(--warm-gold);
+    background-color: #eee; /* fallback background */
+    display: block;
 }
 
 .admin-card {
