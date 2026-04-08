@@ -172,6 +172,33 @@
         </div>
     </footer>
 
+    <script>
+async function loadPrayerTimes() {
+    try {
+        const response = await fetch("https://api.aladhan.com/v1/timingsByCity?city=Nagercoil&country=India&method=1");
+        const data = await response.json();
+
+        const timings = data.data.timings;
+
+        const setTime = (cls, value) => {
+            const el = document.querySelector("." + cls);
+            if (el) el.innerText = value;
+        };
+
+        setTime("fajr", timings.Fajr);
+        setTime("dhuhr", timings.Dhuhr);
+        setTime("asr", timings.Asr);
+        setTime("maghrib", timings.Maghrib);
+        setTime("isha", timings.Isha);
+
+    } catch (error) {
+        console.error("Error fetching prayer times:", error);
+    }
+}
+
+loadPrayerTimes();
+</script>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
