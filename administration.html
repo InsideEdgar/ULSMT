@@ -145,6 +145,24 @@
         function showFallback(img){
             img.style.display = "none";
         }
+        async function loadPrayerTimes() {
+    try {
+        const response = await fetch("https://api.aladhan.com/v1/timingsByCity?city=Nagercoil&country=India&method=1");
+        const data = await response.json();
+
+        const timings = data.data.timings;
+
+        document.querySelector(".fajr").innerText = timings.Fajr;
+        document.querySelector(".dhuhr").innerText = timings.Dhuhr;
+        document.querySelector(".asr").innerText = timings.Asr;
+        document.querySelector(".maghrib").innerText = timings.Maghrib;
+        document.querySelector(".isha").innerText = timings.Isha;
+    } catch (error) {
+        console.error("Error fetching prayer times:", error);
+    }
+}
+
+loadPrayerTimes();
     </script>
 
     <script src="assets/js/script.js"></script>
