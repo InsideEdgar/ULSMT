@@ -208,6 +208,12 @@ async function loadPrayerTimes() {
             return `${hour}:${minute} ${ampm}`;
         };
 
+        document.querySelector(".fajr").innerText = formatTime(today.timings.Fajr);
+        document.querySelector(".dhuhr").innerText = formatTime(today.timings.Dhuhr);
+        document.querySelector(".asr").innerText = formatTime(today.timings.Asr);
+        document.querySelector(".maghrib").innerText = formatTime(today.timings.Maghrib);
+        document.querySelector(".isha").innerText = formatTime(today.timings.Isha);
+
         const tbody = document.getElementById("calendar-body");
         tbody.innerHTML = "";
 
