@@ -10,7 +10,6 @@
 </head>
 <body>
 
-```
 <div class="bismillah-banner arabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
 
 <header>
@@ -30,61 +29,80 @@
 </header>
 
 <!-- Five Daily Prayers -->
+
 <section>
     <h2 class="section-title">The Five Daily Prayers</h2>
     <div class="ornamental-divider"></div>
 
-    <div class="grid-cards">
-        <div class="glass-card"><h3 class="arabic">الفجر</h3><p>Fajr</p></div>
-        <div class="glass-card"><h3 class="arabic">الظهر</h3><p>Dhuhr</p></div>
-        <div class="glass-card"><h3 class="arabic">العصر</h3><p>Asr</p></div>
-        <div class="glass-card"><h3 class="arabic">المغرب</h3><p>Maghrib</p></div>
-        <div class="glass-card"><h3 class="arabic">العشاء</h3><p>Isha</p></div>
-    </div>
+```
+<div class="grid-cards">
+    <div class="glass-card"><h3 class="arabic">الفجر</h3><p>Fajr</p></div>
+    <div class="glass-card"><h3 class="arabic">الظهر</h3><p>Dhuhr</p></div>
+    <div class="glass-card"><h3 class="arabic">العصر</h3><p>Asr</p></div>
+    <div class="glass-card"><h3 class="arabic">المغرب</h3><p>Maghrib</p></div>
+    <div class="glass-card"><h3 class="arabic">العشاء</h3><p>Isha</p></div>
+</div>
+```
+
 </section>
 
+<!-- ✅ Countdown Added -->
+
+<div class="quran-banner" style="margin: 20px;">
+    <h3 class="text-gold">Next Prayer</h3>
+    <p style="color:white; font-size: 1.2rem;">
+        <span id="next-prayer-name">Loading...</span> in 
+        <strong class="text-gold" id="countdown-timer">--:--:--</strong>
+    </p>
+</div>
+
 <!-- Calendar Section -->
+
 <section>
     <h2 class="section-title">Weekly Schedule & Islamic Calendar</h2>
     <div class="ornamental-divider"></div>
 
-    <div style="text-align:center; margin-bottom:20px;">
-        <p><strong>Islamic Date:</strong> <span id="hijri-date">Loading...</span></p>
-        <p><strong>English Date:</strong> <span id="gregorian-date">Loading...</span></p>
-    </div>
+```
+<div style="text-align:center; margin-bottom:20px;">
+    <p><strong>Islamic Date:</strong> <span id="hijri-date">Loading...</span></p>
+    <p><strong>English Date:</strong> <span id="gregorian-date">Loading...</span></p>
+</div>
 
-    <div style="overflow-x:auto;">
-        <table class="schedule-table">
-            <thead>
-                <tr>
-                    <th>Day</th>
-                    <th>Hijri Date</th>
-                    <th>Fajr</th>
-                    <th>Sunrise</th>
-                    <th>Dhuhr</th>
-                    <th>Asr</th>
-                    <th>Maghrib</th>
-                    <th>Isha</th>
-                </tr>
-            </thead>
-            <tbody id="calendar-body">
-                <tr>
-                    <td colspan="8">Loading prayer times...</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div style="overflow-x:auto;">
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Hijri Date</th>
+                <th>Fajr</th>
+                <th>Sunrise</th>
+                <th>Dhuhr</th>
+                <th>Asr</th>
+                <th>Maghrib</th>
+                <th>Isha</th>
+            </tr>
+        </thead>
+        <tbody id="calendar-body">
+            <tr>
+                <td colspan="8">Loading prayer times...</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-    <div class="quran-banner" style="margin-top: 20px;">
-        <h3 class="text-gold">Jumu'ah Information</h3>
-        <p style="color:white; font-size: 1.2rem; margin-top:10px;">
-            The weekly Jumu'ah Khutbah begins at 
-            <strong class="text-gold">12:30 PM</strong>.
-        </p>
-    </div>
+<div class="quran-banner" style="margin-top: 20px;">
+    <h3 class="text-gold">Jumu'ah Information</h3>
+    <p style="color:white; font-size: 1.2rem; margin-top:10px;">
+        The weekly Jumu'ah Khutbah begins at 
+        <strong class="text-gold">12:30 PM</strong>.
+    </p>
+</div>
+```
+
 </section>
 
 <!-- Footer -->
+
 <footer>
     <div class="footer-grid">
         <div class="footer-section">
@@ -98,33 +116,37 @@
             </ul>
         </div>
 
-        <div class="footer-section">
-            <h3>Contact Us</h3>
-            <ul>
-                <li>📍 Uthuman Labbai Sahib Trust</li>
-                <li>✉️ info@ulsmtmasjid.org</li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <h3>Our Mission</h3>
-            <p>
-                To serve the community, provide a welcoming place for worship,
-                and promote Islamic education and unity.
-            </p>
-        </div>
+```
+    <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+            <li>📍 Uthuman Labbai Sahib Trust</li>
+            <li>✉️ info@ulsmtmasjid.org</li>
+        </ul>
     </div>
 
-    <div class="footer-quote arabic">
-        "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ"
+    <div class="footer-section">
+        <h3>Our Mission</h3>
+        <p>
+            To serve the community, provide a welcoming place for worship,
+            and promote Islamic education and unity.
+        </p>
     </div>
+</div>
 
-    <div class="footer-bottom">
-        <p>&copy; 2026 Uthuman Labbai Sahib Trust Jummuah Masjid</p>
-    </div>
+<div class="footer-quote arabic">
+    "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ"
+</div>
+
+<div class="footer-bottom">
+    <p>&copy; 2026 Uthuman Labbai Sahib Trust Jummuah Masjid</p>
+</div>
+```
+
 </footer>
 
 <!-- JS -->
+
 <script>
 async function loadPrayerTimes() {
     try {
@@ -149,7 +171,7 @@ async function loadPrayerTimes() {
         document.getElementById("gregorian-date").innerText =
             `${today.date.gregorian.weekday.en}, ${today.date.gregorian.date}`;
 
-        // Time format
+        // Format time
         const formatTime = (time) => {
             let [hour, minute] = time.split(":");
             hour = parseInt(hour);
@@ -186,6 +208,51 @@ async function loadPrayerTimes() {
             tbody.appendChild(row);
         }
 
+        // ✅ Countdown Logic
+        const prayers = [
+            { name: "Fajr", time: today.timings.Fajr },
+            { name: "Dhuhr", time: today.timings.Dhuhr },
+            { name: "Asr", time: today.timings.Asr },
+            { name: "Maghrib", time: today.timings.Maghrib },
+            { name: "Isha", time: today.timings.Isha }
+        ];
+
+        function getNextPrayer() {
+            const now = new Date();
+
+            for (let p of prayers) {
+                let [h, m] = p.time.split(":");
+                let t = new Date();
+                t.setHours(parseInt(h), parseInt(m), 0);
+
+                if (t > now) return { name: p.name, time: t };
+            }
+
+            let [h, m] = prayers[0].time.split(":");
+            let t = new Date();
+            t.setDate(t.getDate() + 1);
+            t.setHours(parseInt(h), parseInt(m), 0);
+
+            return { name: "Fajr", time: t };
+        }
+
+        function updateCountdown() {
+            const next = getNextPrayer();
+            const now = new Date();
+
+            const diff = next.time - now;
+
+            const h = Math.floor(diff / (1000 * 60 * 60));
+            const m = Math.floor((diff / (1000 * 60)) % 60);
+            const s = Math.floor((diff / 1000) % 60);
+
+            document.getElementById("next-prayer-name").innerText = next.name;
+            document.getElementById("countdown-timer").innerText =
+                `${h.toString().padStart(2,"0")}:${m.toString().padStart(2,"0")}:${s.toString().padStart(2,"0")}`;
+        }
+
+        setInterval(updateCountdown, 1000);
+
     } catch (error) {
         console.error("Error loading prayer times:", error);
     }
@@ -193,7 +260,6 @@ async function loadPrayerTimes() {
 
 loadPrayerTimes();
 </script>
-```
 
 </body>
 </html>
