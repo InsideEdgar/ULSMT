@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,134 +9,191 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="bismillah-banner arabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo-area">
-                <h1>Uthuman Labbai Sahib Trust</h1>
-            </a>
-            <div class="hamburger" id="hamburger">☰</div>
-            <ul class="nav-links" id="nav-links">
+
+```
+<div class="bismillah-banner arabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo-area">
+            <h1>Uthuman Labbai Sahib Trust</h1>
+        </a>
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="prayer-times.html" class="active">Prayer Times</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="administration.html">Administration</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Five Daily Prayers -->
+<section>
+    <h2 class="section-title">The Five Daily Prayers</h2>
+    <div class="ornamental-divider"></div>
+
+    <div class="grid-cards">
+        <div class="glass-card"><h3 class="arabic">الفجر</h3><p>Fajr</p></div>
+        <div class="glass-card"><h3 class="arabic">الظهر</h3><p>Dhuhr</p></div>
+        <div class="glass-card"><h3 class="arabic">العصر</h3><p>Asr</p></div>
+        <div class="glass-card"><h3 class="arabic">المغرب</h3><p>Maghrib</p></div>
+        <div class="glass-card"><h3 class="arabic">العشاء</h3><p>Isha</p></div>
+    </div>
+</section>
+
+<!-- Calendar Section -->
+<section>
+    <h2 class="section-title">Weekly Schedule & Islamic Calendar</h2>
+    <div class="ornamental-divider"></div>
+
+    <div style="text-align:center; margin-bottom:20px;">
+        <p><strong>Islamic Date:</strong> <span id="hijri-date">Loading...</span></p>
+        <p><strong>English Date:</strong> <span id="gregorian-date">Loading...</span></p>
+    </div>
+
+    <div style="overflow-x:auto;">
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hijri Date</th>
+                    <th>Fajr</th>
+                    <th>Sunrise</th>
+                    <th>Dhuhr</th>
+                    <th>Asr</th>
+                    <th>Maghrib</th>
+                    <th>Isha</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <tr>
+                    <td colspan="8">Loading prayer times...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="quran-banner" style="margin-top: 20px;">
+        <h3 class="text-gold">Jumu'ah Information</h3>
+        <p style="color:white; font-size: 1.2rem; margin-top:10px;">
+            The weekly Jumu'ah Khutbah begins at 
+            <strong class="text-gold">12:30 PM</strong>.
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="prayer-times.html" class="active">Prayer Times</a></li>
+                <li><a href="prayer-times.html">Prayer Times</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="administration.html">Administration</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section>
-        <h2 class="section-title">The Five Daily Prayers</h2>
-        <div class="ornamental-divider"></div>
-        <div class="grid-cards">
-            <div class="glass-card">
-                <h3 class="arabic">الفجر</h3>
-                <p><strong>Transliteration:</strong> Fajr</p>
-                <p><strong>Meaning:</strong> Dawn Prayer</p>
-                <p><strong>Rak'ahs:</strong> 2 Sunnah, 2 Fard</p>
-            </div>
-            <div class="glass-card">
-                <h3 class="arabic">الظهر</h3>
-                <p><strong>Transliteration:</strong> Dhuhr</p>
-                <p><strong>Meaning:</strong> Noon Prayer</p>
-                <p><strong>Rak'ahs:</strong> 4 Sunnah, 4 Fard, 2 Sunnah</p>
-            </div>
-            <div class="glass-card">
-                <h3 class="arabic">العصر</h3>
-                <p><strong>Transliteration:</strong> Asr</p>
-                <p><strong>Meaning:</strong> Afternoon Prayer</p>
-                <p><strong>Rak'ahs:</strong> 4 Sunnah, 4 Fard</p>
-            </div>
-            <div class="glass-card">
-                <h3 class="arabic">المغرب</h3>
-                <p><strong>Transliteration:</strong> Maghrib</p>
-                <p><strong>Meaning:</strong> Sunset Prayer</p>
-                <p><strong>Rak'ahs:</strong> 3 Fard, 2 Sunnah</p>
-            </div>
-            <div class="glass-card">
-                <h3 class="arabic">العشاء</h3>
-                <p><strong>Transliteration:</strong> Isha</p>
-                <p><strong>Meaning:</strong> Night Prayer</p>
-                <p><strong>Rak'ahs:</strong> 4 Sunnah, 4 Fard, 2 Sunnah, Witr</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Weekly Schedule & Calendar -->
-    <section>
-        <h2 class="section-title">Weekly Schedule & Islamic Calendar</h2>
-        <div class="ornamental-divider"></div>
-        
-        <div style="text-align:center; margin-bottom:20px;">
-            <p><strong>Current Islamic Month:</strong> Shawwal 1447 AH</p>
         </div>
 
-        <div style="overflow-x:auto;">
-            <table class="schedule-table">
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Hijri Date</th>
-                        <th>Fajr</th>
-                        <th>Sunrise</th>
-                        <th>Dhuhr</th>
-                        <th>Asr</th>
-                        <th>Maghrib</th>
-                        <th>Isha</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Monday</td><td>15 Shawwal</td><td>05:15 AM</td><td>06:30 AM</td><td>12:45 PM</td><td>04:30 PM</td><td>06:40 PM</td><td>08:00 PM</td></tr>
-                    <tr><td>Tuesday</td><td>16 Shawwal</td><td>05:14 AM</td><td>06:29 AM</td><td>12:45 PM</td><td>04:30 PM</td><td>06:40 PM</td><td>08:00 PM</td></tr>
-                    <tr><td>Wednesday</td><td>17 Shawwal</td><td>05:13 AM</td><td>06:28 AM</td><td>12:45 PM</td><td>04:30 PM</td><td>06:41 PM</td><td>08:01 PM</td></tr>
-                    <tr><td>Thursday</td><td>18 Shawwal</td><td>05:12 AM</td><td>06:27 AM</td><td>12:45 PM</td><td>04:30 PM</td><td>06:41 PM</td><td>08:01 PM</td></tr>
-                    <tr class="highlight"><td>Friday (Jumu'ah)</td><td>19 Shawwal</td><td>05:11 AM</td><td>06:26 AM</td><td>12:45 PM</td><td>04:30 PM</td><td>06:42 PM</td><td>08:02 PM</td></tr>
-                    <tr><td>Saturday</td><td>20 Shawwal</td><td>05:10 AM</td><td>06:25 AM</td><td>12:45 PM</td><td>04:30 PM</td><td>06:42 PM</td><td>08:02 PM</td></tr>
-                    <tr><td>Sunday</td><td>21 Shawwal</td><td>05:09 AM</td><td>06:24 AM</td><td>12:45 PM</td><td>04:30 PM</td><td>06:43 PM</td><td>08:03 PM</td></tr>
-                </tbody>
-            </table>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>📍 Uthuman Labbai Sahib Trust</li>
+                <li>✉️ info@ulsmtmasjid.org</li>
+            </ul>
         </div>
 
-        <div class="quran-banner" style="margin-top: 20px;">
-            <h3 class="text-gold">Jumu'ah Information</h3>
-            <p style="color:white; font-size: 1.2rem; margin-top:10px;">The weekly Jumu'ah Khutbah (sermon) begins promptly at <strong class="text-gold">12:30 PM</strong> every Friday, followed by the congregational prayer.</p>
+        <div class="footer-section">
+            <h3>Our Mission</h3>
+            <p>
+                To serve the community, provide a welcoming place for worship,
+                and promote Islamic education and unity.
+            </p>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="prayer-times.html">Prayer Times</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="administration.html">Administration</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <ul>
-                    <li>📍 Uthuman Labbai Sahib Trust, City</li>
-                 
-                    <li>✉️ info@ulsmtmasjid.org</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Our Mission</h3>
-                <p>To serve the community with dedication, provide a welcoming environment for worship, and foster Islamic education and brotherhood.</p>
-            </div>
-        </div>
-        <div class="footer-quote arabic">
-            "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ"
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Uthuman Labbai Sahib Trust Jummuah Masjid. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div class="footer-quote arabic">
+        "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ"
+    </div>
 
-    <script src="assets/js/script.js"></script>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Uthuman Labbai Sahib Trust Jummuah Masjid</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script>
+async function loadPrayerTimes() {
+    try {
+        const todayDate = new Date();
+        const month = todayDate.getMonth() + 1;
+        const year = todayDate.getFullYear();
+
+        const response = await fetch(
+            `https://api.aladhan.com/v1/calendarByCity?city=Nagercoil&country=India&method=1&month=${month}&year=${year}`
+        );
+
+        const result = await response.json();
+        const data = result.data;
+
+        const todayIndex = todayDate.getDate() - 1;
+        const today = data[todayIndex];
+
+        // Dates
+        document.getElementById("hijri-date").innerText =
+            `${today.date.hijri.day} ${today.date.hijri.month.en} ${today.date.hijri.year} AH`;
+
+        document.getElementById("gregorian-date").innerText =
+            `${today.date.gregorian.weekday.en}, ${today.date.gregorian.date}`;
+
+        // Time format
+        const formatTime = (time) => {
+            let [hour, minute] = time.split(":");
+            hour = parseInt(hour);
+            const ampm = hour >= 12 ? "PM" : "AM";
+            hour = hour % 12 || 12;
+            return `${hour}:${minute} ${ampm}`;
+        };
+
+        const tbody = document.getElementById("calendar-body");
+        tbody.innerHTML = "";
+
+        // 7 days
+        for (let i = 0; i < 7; i++) {
+            const day = data[todayIndex + i];
+            if (!day) break;
+
+            const row = document.createElement("tr");
+
+            if (day.date.gregorian.weekday.en === "Friday") {
+                row.classList.add("highlight");
+            }
+
+            row.innerHTML = `
+                <td>${day.date.gregorian.weekday.en}</td>
+                <td>${day.date.hijri.day} ${day.date.hijri.month.en}</td>
+                <td>${formatTime(day.timings.Fajr)}</td>
+                <td>${formatTime(day.timings.Sunrise)}</td>
+                <td>${formatTime(day.timings.Dhuhr)}</td>
+                <td>${formatTime(day.timings.Asr)}</td>
+                <td>${formatTime(day.timings.Maghrib)}</td>
+                <td>${formatTime(day.timings.Isha)}</td>
+            `;
+
+            tbody.appendChild(row);
+        }
+
+    } catch (error) {
+        console.error("Error loading prayer times:", error);
+    }
+}
+
+loadPrayerTimes();
+</script>
+```
+
 </body>
 </html>
